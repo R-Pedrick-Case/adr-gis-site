@@ -67,7 +67,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About\nThe ADR GIS Atlas is an experimental platform for sharing reproducible research, methods, data stories and publications based on linked administrative and geospatial data.\n⚠ Work in progress.\nContent, methods and findings may be updated as projects develop and feedback is received."
   },
   {
     "objectID": "methods/index.html",
