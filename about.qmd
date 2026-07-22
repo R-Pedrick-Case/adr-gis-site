@@ -2,4 +2,10 @@
 title: "About"
 ---
 
-About this site
+# About
+
+The ADR GIS Atlas is an experimental platform for sharing reproducible research, methods, data stories and publications based on linked administrative and geospatial data.
+
+⚠ Work in progress.
+
+Content, methods and findings may be updated as projects develop and feedback is received.
