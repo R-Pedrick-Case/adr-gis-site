@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Using linked administrative data to understand people, place, services, environment and health across Wales.\nThe ADR GIS Atlas brings together research, methods, interactive analyses and publications developed through spatial analysis of linked administrative data.\n\n\n\n\nResearch exploring inequalities in access to infrastructure and essential services.\nExplore Access to Services\nCurrent stories include:\n\nAccess to WiFi\n\n\n\n\n\nResearch examining the relationship between people, places and environmental conditions.\nExplore Climate & Environment\nAreas of interest include:\n\nEnvironmental exposure\nClimate vulnerability\nPlace-based inequalities\n\n\n\n\n\nResearch exploring health outcomes and inequalities through linked administrative data.\nthemes/population-health/index.qmd\nAreas of interest include:\n\nHealth inequalities\nPopulation wellbeing\nGeographic variation in health outcomes\n\n\n\n\n\n\n\n\nAccess to reliable internet is increasingly essential for education, employment, healthcare and social participation.\nThis project investigates patterns of internet and WiFi access across communities and population groups.\nthemes/access-to-services/access-to-wifi.qmd\n\n\n\n\n\nAll projects are supported by transparent and reproducible analytical workflows.\nMethods documentation includes:\n\nData sources\nGeographic processing\nStatistical methods\nReproducibility guidance\n\nmethods/index.qmd\n\n\n\n\nPublications, reports, preprints and presentations associated with Atlas projects.\npublications/index.qmd\n\n\n\n\nFeedback, discussion and collaboration are welcomed.\nThe Atlas is intended as a living resource that brings together research outputs, exploratory analyses, methods and data stories in a single place."
+  },
+  {
+    "objectID": "index.html#current-projects",
+    "href": "index.html#current-projects",
+    "title": "adr-gis-site",
+    "section": "",
+    "text": "Access to WiFi\nSchool Exposome\nFuture projects"
+  },
+  {
+    "objectID": "index.html#get-involved",
+    "href": "index.html#get-involved",
+    "title": "adr-gis-site",
+    "section": "",
+    "text": "Feedback and collaboration are welcome.\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#featured-project",
+    "href": "index.html#featured-project",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Investigating inequalities in internet access and digital connectivity across communities."
+  },
+  {
+    "objectID": "index.html#research-themes",
+    "href": "index.html#research-themes",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Access to Services\nHealth\nGeography\nInequality\nData linkage"
+  },
+  {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Publications, reports, preprints and presentations associated with Atlas projects.\npublications/index.qmd"
+  },
+  {
+    "objectID": "projects/access-to-services/access-to-wifi.html",
+    "href": "projects/access-to-services/access-to-wifi.html",
+    "title": "Access to WiFi",
+    "section": "",
+    "text": "Access to WiFi\nThis project explores patterns of household and individual access to WiFi across different population groups.\nWork in progress."
+  },
+  {
+    "objectID": "projects/access-to-services/access-to-wifi.html#featured-project",
+    "href": "projects/access-to-services/access-to-wifi.html#featured-project",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Investigating inequalities in internet access and digital connectivity across communities."
+  },
+  {
+    "objectID": "projects/access-to-services/access-to-wifi.html#research-themes",
+    "href": "projects/access-to-services/access-to-wifi.html#research-themes",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Access to Services\nHealth\nGeography\nInequality\nData linkage"
+  },
+  {
+    "objectID": "projects/access-to-services/access-to-wifi.html#publications",
+    "href": "projects/access-to-services/access-to-wifi.html#publications",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Research outputs and working papers will appear here as they become available. This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "methods/methods.html",
+    "href": "methods/methods.html",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "#Methods\nPlaceholder for methods section."
+  },
+  {
+    "objectID": "themes/climate-environment/index.html",
+    "href": "themes/climate-environment/index.html",
+    "title": "Climate & Environment",
+    "section": "",
+    "text": "This theme explores the interaction between people, place and environmental conditions.\n\n\nThis section is under development."
+  },
+  {
+    "objectID": "themes/climate-environment/index.html#current-stories",
+    "href": "themes/climate-environment/index.html#current-stories",
+    "title": "Climate & Environment",
+    "section": "",
+    "text": "This section is under development."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi.html",
+    "href": "themes/access-to-services/access-to-wifi.html",
+    "title": "Access to WiFi",
+    "section": "",
+    "text": "Access to WiFi\nThis project explores patterns of household and individual access to WiFi across different population groups.\nWork in progress."
+  },
+  {
+    "objectID": "index.html#themes",
+    "href": "index.html#themes",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Research exploring inequalities in access to infrastructure and essential services.\nExplore Access to Services\nCurrent stories include:\n\nAccess to WiFi\n\n\n\n\n\nResearch examining the relationship between people, places and environmental conditions.\nExplore Climate & Environment\nAreas of interest include:\n\nEnvironmental exposure\nClimate vulnerability\nPlace-based inequalities\n\n\n\n\n\nResearch exploring health outcomes and inequalities through linked administrative data.\nthemes/population-health/index.qmd\nAreas of interest include:\n\nHealth inequalities\nPopulation wellbeing\nGeographic variation in health outcomes"
+  },
+  {
+    "objectID": "index.html#featured-story",
+    "href": "index.html#featured-story",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Access to reliable internet is increasingly essential for education, employment, healthcare and social participation.\nThis project investigates patterns of internet and WiFi access across communities and population groups.\nthemes/access-to-services/access-to-wifi.qmd"
+  },
+  {
+    "objectID": "index.html#methods",
+    "href": "index.html#methods",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "All projects are supported by transparent and reproducible analytical workflows.\nMethods documentation includes:\n\nData sources\nGeographic processing\nStatistical methods\nReproducibility guidance\n\nmethods/index.qmd"
+  },
+  {
+    "objectID": "index.html#collaboration",
+    "href": "index.html#collaboration",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Feedback, discussion and collaboration are welcomed.\nThe Atlas is intended as a living resource that brings together research outputs, exploratory analyses, methods and data stories in a single place."
+  },
+  {
+    "objectID": "publications/publications.html",
+    "href": "publications/publications.html",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "#Publications Placeholder for publications section."
+  },
+  {
+    "objectID": "methods/index.html",
+    "href": "methods/index.html",
+    "title": "Methods",
+    "section": "",
+    "text": "Methods\nPlaceholder for methods section."
+  },
+  {
+    "objectID": "themes/access-to-services/index.html",
+    "href": "themes/access-to-services/index.html",
+    "title": "Access to Services",
+    "section": "",
+    "text": "This theme explores inequalities in access to essential services and infrastructure.\n\n\n\nAccess to WiFi\n\n\n\n\n\nHealthcare Access\nTransport Accessibility\nService Catchments"
+  },
+  {
+    "objectID": "themes/access-to-services/index.html#current-stories",
+    "href": "themes/access-to-services/index.html#current-stories",
+    "title": "Access to Services",
+    "section": "",
+    "text": "Access to WiFi"
+  },
+  {
+    "objectID": "themes/access-to-services/index.html#coming-soon",
+    "href": "themes/access-to-services/index.html#coming-soon",
+    "title": "Access to Services",
+    "section": "",
+    "text": "Healthcare Access\nTransport Accessibility\nService Catchments"
+  },
+  {
+    "objectID": "themes/population-health/index.html",
+    "href": "themes/population-health/index.html",
+    "title": "Population Health",
+    "section": "",
+    "text": "This theme explores health outcomes and inequalities using linked administrative data.\n\n\nThis section is under development."
+  },
+  {
+    "objectID": "themes/population-health/index.html#current-stories",
+    "href": "themes/population-health/index.html#current-stories",
+    "title": "Population Health",
+    "section": "",
+    "text": "This section is under development."
+  }
+]

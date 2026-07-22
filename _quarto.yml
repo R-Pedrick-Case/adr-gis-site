@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  title: "ADR GIS Atlas"
+
+  navbar:
+   logo: assets/logos/adr-wales-logo-dark-sky-bg.png
+   left:
+      - href: index.qmd
+        text: Home
+
+      - text: Themes
+        menu:
+          - href: themes/access-to-services/index.qmd
+            text: Access to Services
+
+          - href: themes/climate-environment/index.qmd
+            text: Climate & Environment
+
+          - href: themes/population-health/index.qmd
+            text: Population Health
+
+      - href: methods/index.qmd
+        text: Methods
+
+      - href: publications/index.qmd
+        text: Publications
+
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true

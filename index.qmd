@@ -1,0 +1,93 @@
+---
+title: "ADR GIS Atlas"
+toc: False
+---
+
+# ADR GIS Atlas
+
+Using linked administrative data to understand people, place, services, environment and health across Wales.
+
+The ADR GIS Atlas brings together research, methods, interactive analyses and publications developed through spatial analysis of linked administrative data.
+
+## Themes
+
+### Access to Services
+
+Research exploring inequalities in access to infrastructure and essential services.
+
+[Explore Access to Services](themes/access-to-services/index.qmd)
+
+Current stories include:
+
+- Access to WiFi
+
+---
+
+### Climate & Environment
+
+Research examining the relationship between people, places and environmental conditions.
+
+[Explore Climate & Environment](themes/population-health/index.qmd)
+
+Areas of interest include:
+
+- Environmental exposure
+- Climate vulnerability
+- Place-based inequalities
+
+---
+
+### Population Health
+
+Research exploring health outcomes and inequalities through linked administrative data.
+
+themes/population-health/index.qmd
+
+Areas of interest include:
+
+- Health inequalities
+- Population wellbeing
+- Geographic variation in health outcomes
+
+---
+
+## Featured Story
+
+### Access to WiFi
+
+Access to reliable internet is increasingly essential for education, employment, healthcare and social participation.
+
+This project investigates patterns of internet and WiFi access across communities and population groups.
+
+themes/access-to-services/access-to-wifi.qmd
+
+---
+
+## Methods
+
+All projects are supported by transparent and reproducible analytical workflows.
+
+Methods documentation includes:
+
+- Data sources
+- Geographic processing
+- Statistical methods
+- Reproducibility guidance
+
+methods/index.qmd
+
+---
+
+## Publications
+
+Publications, reports, preprints and presentations associated with Atlas projects.
+
+publications/index.qmd
+
+---
+
+## Collaboration
+
+Feedback, discussion and collaboration are welcomed.
+
+The Atlas is intended as a living resource that brings together research outputs, exploratory analyses, methods and data stories in a single place.

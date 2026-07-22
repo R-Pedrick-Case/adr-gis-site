@@ -1,0 +1,5 @@
+# Access to WiFi
+
+This project explores patterns of household and individual access to WiFi across different population groups.
+
+Work in progress.
