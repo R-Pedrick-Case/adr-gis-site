@@ -9,5 +9,3 @@ This theme explores inequalities in access to essential services and infrastruct
 ## Coming Soon
 
 - Healthcare Access
-- Transport Accessibility
-- Service Catchments
