@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – ADR GIS Atlas</title>
+<title>Methods – ADR GIS Atlas</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,13 +75,17 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/logos/adr-wales-logo-dark-sky-bg.png" alt="" class="navbar-logo light-content">
+    <img src="../assets/logos/adr-wales-logo-dark-sky-bg.png" alt="" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">ADR GIS Atlas</span>
     </a>
@@ -138,26 +142,130 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#methods" id="toc-methods" class="nav-link active" data-scroll-target="#methods">Methods</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Methods</h1>
+</div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <section id="methods" class="level1">
 <h1>Methods</h1>
-<p>Placeholder for methods section.</p>
+<p>The ADR GIS Atlas is built on a set of reusable analytical workflows for processing administrative, geographic and environmental data.</p>
+<p>These methods are shared to improve transparency, reproducibility and collaboration across projects.</p>
+<section id="core-workflows" class="level2">
+<h2 class="anchored" data-anchor-id="core-workflows">Core Workflows</h2>
+<section id="active-postcodes" class="level3">
+<h3 class="anchored" data-anchor-id="active-postcodes">Active Postcodes</h3>
+<p>Identification and cleaning of active postcode records using the ONS Postcode Directory.</p>
+<p>Used for:</p>
+<ul>
+<li>Geographic linkage</li>
+<li>Address validation</li>
+<li>Postcode matching</li>
+</ul>
+</section>
+</section>
+<section id="active-postcodes-1" class="level2">
+<h2 class="anchored" data-anchor-id="active-postcodes-1"><a href="notebooks/active-postcodes.ipynb">Active Postcodes</a></h2>
+<section id="rural-urban-classification" class="level3">
+<h3 class="anchored" data-anchor-id="rural-urban-classification">Rural / Urban Classification</h3>
+<p>Classification of postcodes and locations using official rural and urban definitions.</p>
+<p>Used for:</p>
+<ul>
+<li>Population segmentation</li>
+<li>Service accessibility analysis</li>
+<li>Environmental modelling</li>
+</ul>
+<p><a href="notebooks/rural-urban-classification.ipynb">Rural Urban Classification</a></p>
+<hr>
+</section>
+<section id="spatial-linkage" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-linkage">Spatial Linkage</h3>
+<p>Methods for linking postcodes, administrative boundaries and geographic datasets.</p>
+<p>Used for:</p>
+<ul>
+<li>Small area statistics</li>
+<li>Nearest-neighbour analysis</li>
+<li>Service catchments</li>
+</ul>
+<p><a href="notebooks/spatial-linkage.ipynb">Spatial Linking</a></p>
+<hr>
+</section>
+<section id="identifying-locations-based-on-classifications-and-open-data" class="level3">
+<h3 class="anchored" data-anchor-id="identifying-locations-based-on-classifications-and-open-data">Identifying locations based on classifications and Open Data</h3>
+<p>Identifying locations based on open data, using Open Street Map and Companies House data.</p>
+<p>Used for:</p>
+<ul>
+<li>Finding places of interest - in this case farms</li>
+</ul>
+<p><a href="notebooks/identify-locations.ipynb">Active Postcodes</a></p>
+<hr>
+</section>
+<section id="statistical-pipelines" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-pipelines">Statistical Pipelines</h3>
+<p>Reusable workflows for data aggregation, summary statistics and analytical outputs.</p>
+<p>Used for:</p>
+<ul>
+<li>Project reporting</li>
+<li>Exploratory analysis</li>
+<li>Data quality checking</li>
+</ul>
+<p><a href="notebooks/statistical-pipelines.ipynb">Statistical Pipelines</a></p>
+<hr>
+</section>
+<section id="hex-grid-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="hex-grid-analysis">Hex Grid Analysis</h3>
+<p>Methods for producing location-based summaries using hexagonal grids.</p>
+<p>Used for:</p>
+<ul>
+<li>Spatial visualisation</li>
+<li>Coverage analysis</li>
+<li>Density estimation</li>
+</ul>
+<p><a href="notebooks/hex-grid-analysis.ipynb">Hex Grid Analysis</a></p>
+<hr>
+</section>
+</section>
+<section id="reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<p>Where possible, methods pages include:</p>
+<ul>
+<li>Data sources</li>
+<li>Assumptions</li>
+<li>Processing steps</li>
+<li>Selected code examples</li>
+<li>Links to source notebooks</li>
+<li>Links to GitHub repositories</li>
+</ul>
+<p>Code examples are presented in a condensed format to highlight the key analytical steps while keeping pages readable for non-technical collaborators.</p>
+</section>
+<section id="related-resources" class="level2">
+<h2 class="anchored" data-anchor-id="related-resources">Related Resources</h2>
+<ul>
+<li><a href="">Publications- Access to Services</a></li>
+<li><a href="../themes/population-health/index.html">Population Health</a></li>
+<li><a href="../themes/climate-environment/index.html">Climate &amp; Environment</a></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

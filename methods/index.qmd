@@ -1,3 +1,112 @@
+---
+title: "Methods"
+toc: false
+---
+
 # Methods
 
-Placeholder for methods section.
+The ADR GIS Atlas is built on a set of reusable analytical workflows for processing administrative, geographic and environmental data.
+
+These methods are shared to improve transparency, reproducibility and collaboration across projects.
+
+## Core Workflows
+
+### Active Postcodes
+
+Identification and cleaning of active postcode records using the ONS Postcode Directory.
+
+Used for:
+
+- Geographic linkage
+- Address validation
+- Postcode matching
+
+[Active Postcodes](notebooks/active-postcodes.ipynb)
+---
+
+### Rural / Urban Classification
+
+Classification of postcodes and locations using official rural and urban definitions.
+
+Used for:
+
+- Population segmentation
+- Service accessibility analysis
+- Environmental modelling
+
+[Rural Urban Classification](notebooks/rural-urban-classification.ipynb)
+
+---
+
+### Spatial Linkage
+
+Methods for linking postcodes, administrative boundaries and geographic datasets.
+
+Used for:
+
+- Small area statistics
+- Nearest-neighbour analysis
+- Service catchments
+
+[Spatial Linking](notebooks/spatial-linkage.ipynb)
+
+---
+
+### Identifying locations based on classifications and Open Data
+
+Identifying locations based on open data, using Open Street Map and Companies House data.
+
+Used for:
+
+- Finding places of interest - in this case farms
+
+[Active Postcodes](notebooks/identify-locations.ipynb)
+
+---
+
+### Statistical Pipelines
+
+Reusable workflows for data aggregation, summary statistics and analytical outputs.
+
+Used for:
+
+- Project reporting
+- Exploratory analysis
+- Data quality checking
+
+[Statistical Pipelines](notebooks/statistical-pipelines.ipynb)
+
+---
+
+### Hex Grid Analysis
+
+Methods for producing location-based summaries using hexagonal grids.
+
+Used for:
+
+- Spatial visualisation
+- Coverage analysis
+- Density estimation
+
+[Hex Grid Analysis](notebooks/hex-grid-analysis.ipynb)
+
+---
+
+## Reproducibility
+
+Where possible, methods pages include:
+
+- Data sources
+- Assumptions
+- Processing steps
+- Selected code examples
+- Links to source notebooks
+- Links to GitHub repositories
+
+Code examples are presented in a condensed format to highlight the key analytical steps while keeping pages readable for non-technical collaborators.
+
+## Related Resources
+
+- [Publications- Access to Services]()
+- [Population Health](/themes/population-health/index.qmd)
+- [Climate & Environment](/themes/climate-environment/index.qmd)

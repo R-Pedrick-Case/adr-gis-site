@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "ADR GIS Atlas",
     "section": "",
-    "text": "Using linked administrative data to understand people, place, services, environment and health across Wales.\nThe ADR GIS Atlas brings together research, methods, interactive analyses and publications developed through spatial analysis of linked administrative data.\n\n\n\n\nResearch exploring inequalities in access to infrastructure and essential services.\nExplore Access to Services\nCurrent stories include:\n\nAccess to WiFi\n\n\n\n\n\nResearch examining the relationship between people, places and environmental conditions.\nExplore Climate & Environment\nAreas of interest include:\n\nEnvironmental exposure\nClimate vulnerability\nPlace-based inequalities\n\n\n\n\n\nResearch exploring health outcomes and inequalities through linked administrative data.\nthemes/population-health/index.qmd\nAreas of interest include:\n\nHealth inequalities\nPopulation wellbeing\nGeographic variation in health outcomes\n\n\n\n\n\n\n\n\nAccess to reliable internet is increasingly essential for education, employment, healthcare and social participation.\nThis project investigates patterns of internet and WiFi access across communities and population groups.\nthemes/access-to-services/access-to-wifi.qmd\n\n\n\n\n\nAll projects are supported by transparent and reproducible analytical workflows.\nMethods documentation includes:\n\nData sources\nGeographic processing\nStatistical methods\nReproducibility guidance\n\nmethods/index.qmd\n\n\n\n\nPublications, reports, preprints and presentations associated with Atlas projects.\npublications/index.qmd\n\n\n\n\nFeedback, discussion and collaboration are welcomed.\nThe Atlas is intended as a living resource that brings together research outputs, exploratory analyses, methods and data stories in a single place."
+    "text": "Using linked administrative data to understand people, place, services, environment and health across Wales.\nThe ADR GIS Atlas brings together research, methods, interactive analyses and publications developed through spatial analysis of linked administrative data.\n\n\n\n\nResearch exploring inequalities in access to infrastructure and essential services.\nExplore Access to Services\nCurrent stories include:\n\nAccess to WiFi\n\n\n\n\n\nResearch examining the relationship between people, places and environmental conditions.\nExplore Climate & Environment\nAreas of interest include:\n\nEnvironmental exposure\nClimate vulnerability\nPlace-based inequalities\n\n\n\n\n\nResearch exploring health outcomes and inequalities through linked administrative data.\nExplore Population Health\nAreas of interest include:\n\nHealth inequalities\nPopulation wellbeing\nGeographic variation in health outcomes\n\n\n\n\n\n\n\n\nAccess to reliable internet is increasingly essential for education, employment, healthcare and social participation.\nThis project investigates patterns of internet and WiFi access across communities and population groups.\nExplore Access to Wifi\n\n\n\n\n\nAll projects are supported by transparent and reproducible analytical workflows.\nMethods documentation includes:\n\nData sources\nGeographic processing\nStatistical methods\nReproducibility guidance\n\nExplore Methods\n\n\n\n\nPublications, reports, preprints and presentations associated with Atlas projects.\nExplore Publications\n\n\n\n\nFeedback, discussion and collaboration are welcomed.\nThe Atlas is intended as a living resource that brings together research outputs, exploratory analyses, methods and data stories in a single place."
   },
   {
     "objectID": "index.html#current-projects",
@@ -46,7 +46,7 @@
     "href": "index.html#publications",
     "title": "ADR GIS Atlas",
     "section": "",
-    "text": "Publications, reports, preprints and presentations associated with Atlas projects.\npublications/index.qmd"
+    "text": "Publications, reports, preprints and presentations associated with Atlas projects.\nExplore Publications"
   },
   {
     "objectID": "projects/access-to-services/access-to-wifi.html",
@@ -100,30 +100,30 @@
   {
     "objectID": "themes/access-to-services/access-to-wifi.html",
     "href": "themes/access-to-services/access-to-wifi.html",
-    "title": "Access to WiFi",
+    "title": "Digital Connectivity",
     "section": "",
-    "text": "Access to WiFi\nThis project explores patterns of household and individual access to WiFi across different population groups.\nWork in progress."
+    "text": "Farm internet speeds remain among the lowest in the country despite increasing dependence on digital services.\n\n\n\nAccess to services is increasingly digital. From healthcare and education to banking and government services, many everyday activities now depend on a reliable internet connection.\nCommunities with poor connectivity may face barriers to participation in modern society.\n\n\n\n\n\nFarming postcodes consistently recorded poorer internet connectivity than urban areas and generally performed worse than surrounding rural settlements, particularly when looking at higher-speed broadband services.\n\n\n\n\n\n\nNote\n\n\n\nFarm internet speeds remain among the lowest in the country despite increasing dependence on digital services.\n\n\n\n\n\n\n\n\nMeasure\nUrban (%)\nRural (%)\nFarm (%)\n\n\n\n\nAbove USO\n99.95\n98.67\n96.87\n\n\nAccess to ≥30 Mb/s\n97.94\n86.46\n68.51\n\n\nGigabit Availability\n87.67\n58.14\n47.53\n\n\n\nThe largest differences emerge when considering access to high-speed and gigabit-capable broadband.\n\n\n\nAccess to broadband appears closely linked to infrastructure. Urban areas benefit from greater coverage, while connectivity decreases in more remote and dispersed settlements.\nFarms often occupy the most geographically isolated locations and experience lower access to faster services.\n\n\n\nThe analysis suggests that broad urban-rural classifications may mask important differences within rural areas.\nFarming communities often experience poorer connectivity than neighbouring villages despite both being classified as rural.\n\n\n\nSpatial analysis identified significant clustering of broadband performance.\n\n\n\nIndicator\nMoran’s I\n\n\n\n\nAbove USO\n0.373\n\n\n≥30 Mb/s\n0.567\n\n\nGigabit Availability\n0.637\n\n\n\nAreas with good connectivity tend to be near other well-connected areas, while poorly connected areas also cluster geographically.\n\n\n\n\nOfficial statistics already show a rural-urban divide in connectivity.\nOur findings suggest that some communities within rural areas, particularly farming households, may experience even greater disadvantage than broader rural averages suggest.\nAs services continue to move online, poor connectivity may reduce access to:\n\nHealthcare\nEducation\nEmployment\nGovernment services\nSocial participation\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThere is currently no open national register of farm properties in the UK.\n\n\nThis analysis therefore identifies likely farming locations using a combination of:\n\nOpenStreetMap\nCompanies House records\n\nOther limitations include:\n\nUse of postcode centroids rather than boundaries\nPostcode-level broadband data\nNo comparable mobile coverage data at postcode scale\n\n\n\n\nFuture work could explore:\n\nDeprivation and digital exclusion\nMobile connectivity\nHousehold-level analysis through UPRN linkage\nDistance to telecommunications infrastructure\nStandardised UK-wide urban/rural classifications\n\n\n\n\n\n\n\nActive Postcodes\nRural / Urban Classification\nSpatial Linking\nStatistical Pipelines\n\n\n\n\n\nGitHub Repository\nAnalysis Notebooks\nOFCOM Connected Nations Data"
   },
   {
     "objectID": "index.html#themes",
     "href": "index.html#themes",
     "title": "ADR GIS Atlas",
     "section": "",
-    "text": "Research exploring inequalities in access to infrastructure and essential services.\nExplore Access to Services\nCurrent stories include:\n\nAccess to WiFi\n\n\n\n\n\nResearch examining the relationship between people, places and environmental conditions.\nExplore Climate & Environment\nAreas of interest include:\n\nEnvironmental exposure\nClimate vulnerability\nPlace-based inequalities\n\n\n\n\n\nResearch exploring health outcomes and inequalities through linked administrative data.\nthemes/population-health/index.qmd\nAreas of interest include:\n\nHealth inequalities\nPopulation wellbeing\nGeographic variation in health outcomes"
+    "text": "Research exploring inequalities in access to infrastructure and essential services.\nExplore Access to Services\nCurrent stories include:\n\nAccess to WiFi\n\n\n\n\n\nResearch examining the relationship between people, places and environmental conditions.\nExplore Climate & Environment\nAreas of interest include:\n\nEnvironmental exposure\nClimate vulnerability\nPlace-based inequalities\n\n\n\n\n\nResearch exploring health outcomes and inequalities through linked administrative data.\nExplore Population Health\nAreas of interest include:\n\nHealth inequalities\nPopulation wellbeing\nGeographic variation in health outcomes"
   },
   {
     "objectID": "index.html#featured-story",
     "href": "index.html#featured-story",
     "title": "ADR GIS Atlas",
     "section": "",
-    "text": "Access to reliable internet is increasingly essential for education, employment, healthcare and social participation.\nThis project investigates patterns of internet and WiFi access across communities and population groups.\nthemes/access-to-services/access-to-wifi.qmd"
+    "text": "Access to reliable internet is increasingly essential for education, employment, healthcare and social participation.\nThis project investigates patterns of internet and WiFi access across communities and population groups.\nExplore Access to Wifi"
   },
   {
     "objectID": "index.html#methods",
     "href": "index.html#methods",
     "title": "ADR GIS Atlas",
     "section": "",
-    "text": "All projects are supported by transparent and reproducible analytical workflows.\nMethods documentation includes:\n\nData sources\nGeographic processing\nStatistical methods\nReproducibility guidance\n\nmethods/index.qmd"
+    "text": "All projects are supported by transparent and reproducible analytical workflows.\nMethods documentation includes:\n\nData sources\nGeographic processing\nStatistical methods\nReproducibility guidance\n\nExplore Methods"
   },
   {
     "objectID": "index.html#collaboration",
@@ -144,7 +144,7 @@
     "href": "methods/index.html",
     "title": "Methods",
     "section": "",
-    "text": "Methods\nPlaceholder for methods section."
+    "text": "The ADR GIS Atlas is built on a set of reusable analytical workflows for processing administrative, geographic and environmental data.\nThese methods are shared to improve transparency, reproducibility and collaboration across projects.\n\n\n\n\nIdentification and cleaning of active postcode records using the ONS Postcode Directory.\nUsed for:\n\nGeographic linkage\nAddress validation\nPostcode matching\n\n\n\n\n\n\n\nClassification of postcodes and locations using official rural and urban definitions.\nUsed for:\n\nPopulation segmentation\nService accessibility analysis\nEnvironmental modelling\n\nRural Urban Classification\n\n\n\n\nMethods for linking postcodes, administrative boundaries and geographic datasets.\nUsed for:\n\nSmall area statistics\nNearest-neighbour analysis\nService catchments\n\nSpatial Linking\n\n\n\n\nIdentifying locations based on open data, using Open Street Map and Companies House data.\nUsed for:\n\nFinding places of interest - in this case farms\n\nActive Postcodes\n\n\n\n\nReusable workflows for data aggregation, summary statistics and analytical outputs.\nUsed for:\n\nProject reporting\nExploratory analysis\nData quality checking\n\nStatistical Pipelines\n\n\n\n\nMethods for producing location-based summaries using hexagonal grids.\nUsed for:\n\nSpatial visualisation\nCoverage analysis\nDensity estimation\n\nHex Grid Analysis\n\n\n\n\n\nWhere possible, methods pages include:\n\nData sources\nAssumptions\nProcessing steps\nSelected code examples\nLinks to source notebooks\nLinks to GitHub repositories\n\nCode examples are presented in a condensed format to highlight the key analytical steps while keeping pages readable for non-technical collaborators.\n\n\n\n\nPublications- Access to Services\nPopulation Health\nClimate & Environment"
   },
   {
     "objectID": "themes/access-to-services/index.html",
@@ -180,5 +180,82 @@
     "title": "Population Health",
     "section": "",
     "text": "This section is under development."
+  },
+  {
+    "objectID": "methods/index.html#core-workflows",
+    "href": "methods/index.html#core-workflows",
+    "title": "Methods",
+    "section": "",
+    "text": "Identification and cleaning of active postcode records using the ONS Postcode Directory.\nUsed for:\n\nGeographic linkage\nAddress validation\nPostcode matching"
+  },
+  {
+    "objectID": "methods/index.html#active-postcodes-1",
+    "href": "methods/index.html#active-postcodes-1",
+    "title": "Methods",
+    "section": "",
+    "text": "Classification of postcodes and locations using official rural and urban definitions.\nUsed for:\n\nPopulation segmentation\nService accessibility analysis\nEnvironmental modelling\n\nRural Urban Classification\n\n\n\n\nMethods for linking postcodes, administrative boundaries and geographic datasets.\nUsed for:\n\nSmall area statistics\nNearest-neighbour analysis\nService catchments\n\nSpatial Linking\n\n\n\n\nIdentifying locations based on open data, using Open Street Map and Companies House data.\nUsed for:\n\nFinding places of interest - in this case farms\n\nActive Postcodes\n\n\n\n\nReusable workflows for data aggregation, summary statistics and analytical outputs.\nUsed for:\n\nProject reporting\nExploratory analysis\nData quality checking\n\nStatistical Pipelines\n\n\n\n\nMethods for producing location-based summaries using hexagonal grids.\nUsed for:\n\nSpatial visualisation\nCoverage analysis\nDensity estimation\n\nHex Grid Analysis"
+  },
+  {
+    "objectID": "methods/index.html#reproducibility",
+    "href": "methods/index.html#reproducibility",
+    "title": "Methods",
+    "section": "",
+    "text": "Where possible, methods pages include:\n\nData sources\nAssumptions\nProcessing steps\nSelected code examples\nLinks to source notebooks\nLinks to GitHub repositories\n\nCode examples are presented in a condensed format to highlight the key analytical steps while keeping pages readable for non-technical collaborators."
+  },
+  {
+    "objectID": "methods/index.html#related-resources",
+    "href": "methods/index.html#related-resources",
+    "title": "Methods",
+    "section": "",
+    "text": "Publications- Access to Services\nPopulation Health\nClimate & Environment"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi.html#why-does-this-matter",
+    "href": "themes/access-to-services/access-to-wifi.html#why-does-this-matter",
+    "title": "Digital Connectivity",
+    "section": "",
+    "text": "Reliable internet access increasingly underpins access to services, employment, education and healthcare."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi.html#why-this-matters",
+    "href": "themes/access-to-services/access-to-wifi.html#why-this-matters",
+    "title": "Digital Connectivity",
+    "section": "",
+    "text": "Access to services is increasingly digital. From healthcare and education to banking and government services, many everyday activities now depend on a reliable internet connection.\nCommunities with poor connectivity may face barriers to participation in modern society."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi.html#key-findings",
+    "href": "themes/access-to-services/access-to-wifi.html#key-findings",
+    "title": "Digital Connectivity",
+    "section": "",
+    "text": "Farming postcodes consistently recorded poorer internet connectivity than urban areas and generally performed worse than surrounding rural settlements, particularly when looking at higher-speed broadband services.\n\n\n\n\n\n\nNote\n\n\n\nFarm internet speeds remain among the lowest in the country despite increasing dependence on digital services.\n\n\n\n\n\n\n\n\nMeasure\nUrban (%)\nRural (%)\nFarm (%)\n\n\n\n\nAbove USO\n99.95\n98.67\n96.87\n\n\nAccess to ≥30 Mb/s\n97.94\n86.46\n68.51\n\n\nGigabit Availability\n87.67\n58.14\n47.53\n\n\n\nThe largest differences emerge when considering access to high-speed and gigabit-capable broadband.\n\n\n\nAccess to broadband appears closely linked to infrastructure. Urban areas benefit from greater coverage, while connectivity decreases in more remote and dispersed settlements.\nFarms often occupy the most geographically isolated locations and experience lower access to faster services.\n\n\n\nThe analysis suggests that broad urban-rural classifications may mask important differences within rural areas.\nFarming communities often experience poorer connectivity than neighbouring villages despite both being classified as rural.\n\n\n\nSpatial analysis identified significant clustering of broadband performance.\n\n\n\nIndicator\nMoran’s I\n\n\n\n\nAbove USO\n0.373\n\n\n≥30 Mb/s\n0.567\n\n\nGigabit Availability\n0.637\n\n\n\nAreas with good connectivity tend to be near other well-connected areas, while poorly connected areas also cluster geographically."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi.html#interpretation",
+    "href": "themes/access-to-services/access-to-wifi.html#interpretation",
+    "title": "Digital Connectivity",
+    "section": "",
+    "text": "Official statistics already show a rural-urban divide in connectivity.\nOur findings suggest that some communities within rural areas, particularly farming households, may experience even greater disadvantage than broader rural averages suggest.\nAs services continue to move online, poor connectivity may reduce access to:\n\nHealthcare\nEducation\nEmployment\nGovernment services\nSocial participation"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi.html#limitations",
+    "href": "themes/access-to-services/access-to-wifi.html#limitations",
+    "title": "Digital Connectivity",
+    "section": "",
+    "text": "Important\n\n\n\nThere is currently no open national register of farm properties in the UK.\n\n\nThis analysis therefore identifies likely farming locations using a combination of:\n\nOpenStreetMap\nCompanies House records\n\nOther limitations include:\n\nUse of postcode centroids rather than boundaries\nPostcode-level broadband data\nNo comparable mobile coverage data at postcode scale"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi.html#future-research",
+    "href": "themes/access-to-services/access-to-wifi.html#future-research",
+    "title": "Digital Connectivity",
+    "section": "",
+    "text": "Future work could explore:\n\nDeprivation and digital exclusion\nMobile connectivity\nHousehold-level analysis through UPRN linkage\nDistance to telecommunications infrastructure\nStandardised UK-wide urban/rural classifications"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi.html#reproducibility",
+    "href": "themes/access-to-services/access-to-wifi.html#reproducibility",
+    "title": "Digital Connectivity",
+    "section": "",
+    "text": "Active Postcodes\nRural / Urban Classification\nSpatial Linking\nStatistical Pipelines\n\n\n\n\n\nGitHub Repository\nAnalysis Notebooks\nOFCOM Connected Nations Data"
   }
 ]

@@ -41,7 +41,7 @@ Areas of interest include:
 
 Research exploring health outcomes and inequalities through linked administrative data.
 
-themes/population-health/index.qmd
+[Explore Population Health](themes/population-health/index.qmd)
 
 Areas of interest include:
 
@@ -59,7 +59,7 @@ Access to reliable internet is increasingly essential for education, employment,
 
 This project investigates patterns of internet and WiFi access across communities and population groups.
 
-themes/access-to-services/access-to-wifi.qmd
+[Explore Access to Wifi](themes/access-to-services/access-to-wifi.qmd)
 
 ---
 
@@ -74,7 +74,7 @@ Methods documentation includes:
 - Statistical methods
 - Reproducibility guidance
 
-methods/index.qmd
+[Explore Methods](methods/index.qmd)
 
 ---
 
@@ -82,7 +82,7 @@ methods/index.qmd
 
 Publications, reports, preprints and presentations associated with Atlas projects.
 
-publications/index.qmd
+[Explore Publications](publications/index.qmd)
 
 ---
 
