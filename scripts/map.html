@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Connectivity Map</title>
+
+  https://unpkg.com/maplibre-gl/dist/maplibre-gl.css
+
+  <style>
+    html, body, #map {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+https://unpkg.com/maplibre-gl/dist/maplibre-gl.js
+
+<script>
+
+const map = new maplibregl.Map({
+  container: "map",
+  style: {
+    version: 8,
+    sources: {
+      connectivity: {
+        type: "vector",
+        url: "http://localhost:3000/connectivity"
+      }
+    },
+    layers: []
+  },
+  center: [-2, 54],
+  zoom: 5
+});
+
+</script>
+
+</body>
+</html>
