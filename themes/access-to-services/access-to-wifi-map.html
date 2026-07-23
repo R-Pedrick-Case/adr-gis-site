@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Test Map – ADR GIS Atlas</title>
+<title>access-to-wifi-map – ADR GIS Atlas</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,102 +75,76 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/logos/adr-wales-logo-dark-sky-bg.png" alt="" class="navbar-logo light-content">
-    <img src="../../assets/logos/adr-wales-logo-dark-sky-bg.png" alt="" class="navbar-logo dark-content">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">ADR GIS Atlas</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-themes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Themes</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-themes">    
-        <li>
-    <a class="dropdown-item" href="../../themes/access-to-services/index.html">
- <span class="dropdown-text">Access to Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../themes/climate-environment/index.html">
- <span class="dropdown-text">Climate &amp; Environment</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../themes/population-health/index.html">
- <span class="dropdown-text">Population Health</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../../methods/index.html"> 
-<span class="menu-text">Methods</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
-<span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Test Map</h1>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <p><link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css"></p>
-<div id="map" style="height:700px;border:1px;width:100%;">
+<div style="position:relative;">
+<div id="map" style="height:700px;width:100%;">
 
 </div>
+<div id="legend">
+<details>
+<summary>
+Legend
+</summary>
+<div>
+<span style="background:#D9EDF2"></span>0-25%
+</div>
+<div>
+<span style="background:#87E1D1"></span>25-50%
+</div>
+<div>
+<span style="background:#23C6A8"></span>50-75%
+</div>
+<div>
+<span style="background:#2E6F95"></span>75-90%
+</div>
+<div>
+<span style="background:#24384D"></span>90-100%
+</div>
+</details>
+</div>
+</div>
+<style>
+#legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+#legend details {
+  font-size: 14px;
+}
+
+#legend div {
+  margin-top: 4px;
+}
+
+#legend span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+</style>
 <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
 <script src="https://unpkg.com/pmtiles@4.3.0/dist/pmtiles.js"></script>
 <script>
@@ -178,39 +152,47 @@ ul.task-list li input[type="checkbox"] {
   const protocol = new pmtiles.Protocol();
   maplibregl.addProtocol("pmtiles", protocol.tile);
 
-  const map = new maplibregl.Map({
-    container: "map",
-    style: {
-      version: 8,
-      
-      sources: {
-        osm: {
-          type: "raster",
-          tiles: [
-            "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+</script>
+<script>
 
-          ],
-          tileSize: 256
-        },
+const map = new maplibregl.Map({
+  container: "map",
 
-        connectivity: {
-          type:"vector",
-          url:"pmtiles://https://r-pedrick-case.github.io/adr-gis-site/data/maps/connectivity.pmtiles"
-        }
+  style: {
+    version: 8,
+
+    sources: {
+
+      carto: {
+        type: "raster",
+        tiles: [
+          "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+          "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+          "https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+        ],
+        tileSize: 256
+      },
+
+      connectivity: {
+        type: "vector",
+        url: "pmtiles://https://r-pedrick-case.github.io/adr-gis-site/data/maps/connectivity.pmtiles"
+      }
+
     },
 
-      layers: [
+    layers: [
+
       {
-        id: "osm",
+        id: "carto",
         type: "raster",
-        source: "osm"
+        source: "carto"
       },
 
       {
-        id: 'connectivity',
-        type: 'fill',
-        source: 'connectivity',
-        "source-layer": 'uk_connectivity_hex_2025',
+        id: "connectivity",
+        type: "fill",
+        source: "connectivity",
+        "source-layer": "uk_connectivity_hex_2025",
 
         paint: {
           "fill-color": [
@@ -223,18 +205,55 @@ ul.task-list li input[type="checkbox"] {
             50, "#23C6A8",
             75, "#2E6F95",
             100, "#24384D"
-
           ],
-          "fill-opacity": 0.75
+
+          "fill-opacity": 0.5
+        }
+      },
+
+      {
+        id: "connectivity-outline",
+        type: "line",
+        source: "connectivity",
+        "source-layer": "uk_connectivity_hex_2025",
+
+        paint: {
+          "line-color": "#ffffff",
+          "line-width": 0.5
         }
       }
+
     ]
   },
 
-  center: [-2.5, 54.5],
-  zoom: 5
+  center: [-3.94, 51.62],
+  zoom: 10
+});
+
+const popup = new maplibregl.Popup({
+  closeButton: false,
+  closeOnClick: false
+});
+
+map.on("mousemove", "connectivity", (e) => {
+
+  const p = e.features[0].properties;
+
+  popup
+    .setLngLat(e.lngLat)
+    .setHTML(
+      `<strong>Gigabit availability:</strong> ${Number(p["Gigabit availability (% premises)"]).toFixed(1)}%`
+    )
+    .addTo(map);
 
 });
+
+map.on("mouseleave", "connectivity", () => {
+  popup.remove();
+});
+
+map.addControl(new maplibregl.NavigationControl(), "top-left");
+
 
 </script>
 
