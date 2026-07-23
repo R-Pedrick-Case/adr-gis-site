@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Digital Connectivity – ADR GIS Atlas</title>
+<title>access-to-wifi – ADR GIS Atlas</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -139,246 +139,107 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#access-to-wifi" id="toc-access-to-wifi" class="nav-link active" data-scroll-target="#access-to-wifi">Access to WiFi</a>
-  <ul class="collapse">
-  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why this matters</a></li>
-  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a>
-  <ul class="collapse">
-  <li><a href="#farms-remain-among-the-least-connected-locations" id="toc-farms-remain-among-the-least-connected-locations" class="nav-link" data-scroll-target="#farms-remain-among-the-least-connected-locations">Farms remain among the least connected locations</a></li>
-  <li><a href="#the-gap-widens-at-higher-internet-speeds" id="toc-the-gap-widens-at-higher-internet-speeds" class="nav-link" data-scroll-target="#the-gap-widens-at-higher-internet-speeds">The gap widens at higher internet speeds</a></li>
-  <li><a href="#connectivity-strongly-reflects-location" id="toc-connectivity-strongly-reflects-location" class="nav-link" data-scroll-target="#connectivity-strongly-reflects-location">Connectivity strongly reflects location</a></li>
-  </ul></li>
-  <li><a href="#interactive-map" id="toc-interactive-map" class="nav-link" data-scroll-target="#interactive-map">Interactive map</a></li>
-  <li><a href="#interactive-map-1" id="toc-interactive-map-1" class="nav-link" data-scroll-target="#interactive-map-1">Interactive map</a>
-  <ul class="collapse">
-  <li><a href="#rural-classifications-can-hide-inequality" id="toc-rural-classifications-can-hide-inequality" class="nav-link" data-scroll-target="#rural-classifications-can-hide-inequality">Rural classifications can hide inequality</a></li>
-  <li><a href="#broadband-access-is-geographically-clustered" id="toc-broadband-access-is-geographically-clustered" class="nav-link" data-scroll-target="#broadband-access-is-geographically-clustered">Broadband access is geographically clustered</a></li>
-  </ul></li>
-  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
-  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
-  <li><a href="#future-research" id="toc-future-research" class="nav-link" data-scroll-target="#future-research">Future Research</a></li>
-  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a>
-  <ul class="collapse">
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Digital Connectivity</h1>
-<p class="subtitle lead">Spatial Variation of Wifi Speeds</p>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<div class="{=html}">
+<p><link href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css" rel="stylesheet"></p>
+<style>
+#map {
+  height: 700px;
+  width: 100%;
+  border-radius: 8px;
+}
+</style>
+<div id="map">
 
+</div>
+://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js”&gt;
+<script src="https://"></script>
+<script>
 
-</header>
+const protocol = new pmtiles.Protocol();
+maplibregl.addProtocol("pmtiles", protocol.tile);
 
+const map = new maplibregl.Map({
+  container: "map",
 
-<section id="access-to-wifi" class="level1">
-<h1>Access to WiFi</h1>
-<p>Farm internet speeds remain among the lowest in the country despite increasing dependence on digital services.</p>
-<p><img src="../../assets/images/wifi_speed_2025_info.png" class="img-fluid"></p>
-<section id="why-this-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-matters">Why this matters</h2>
-<p>Access to services is increasingly digital. From healthcare and education to banking and government services, many everyday activities now depend on a reliable internet connection.</p>
-<p>Communities with poor connectivity may face barriers to participation in modern society.</p>
-</section>
-<section id="key-findings" class="level2">
-<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
-<section id="farms-remain-among-the-least-connected-locations" class="level3">
-<h3 class="anchored" data-anchor-id="farms-remain-among-the-least-connected-locations">Farms remain among the least connected locations</h3>
-<p>Farming postcodes consistently recorded poorer internet connectivity than urban areas and generally performed worse than surrounding rural settlements, particularly when looking at higher-speed broadband services.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+  style: {
+    version: 8,
+
+    sources: {
+
+      osm: {
+        type: "raster",
+        tiles: [
+          "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        ],
+        tileSize: 256,
+        attribution: "© OpenStreetMap contributors"
+      },
+
+      connectivity: {
+        type: "vector",
+        url: "pmtiles://../../data/maps/connectivity.pmtiles"
+      }
+
+    },
+
+    layers: [
+
+      {
+        id: "osm",
+        type: "raster",
+        source: "osm"
+      },
+
+      {
+        id: "connectivity",
+        type: "fill",
+        source: "connectivity",
+        "source-layer": "uk_connectivity_hex_2025",
+
+        paint: {
+
+          "fill-color": [
+            "interpolate",
+            ["linear"],
+            ["get", "Gigabit availability (% premises)"],
+
+            0,   "#D9EDF2",
+            25,  "#87E1D1",
+            50,  "#23C6A8",
+            75,  "#2E6F95",
+            100, "#24384D"
+          ],
+
+          "fill-opacity": 0.75
+        }
+      }
+
+    ]
+  },
+
+  center: [-2.5, 54.5],
+  zoom: 5
+});
+
+map.addControl(
+  new maplibregl.NavigationControl(),
+  "top-right"
+);
+
+</script>
 </div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Farm internet speeds remain among the lowest in the country despite increasing dependence on digital services.</p>
-</div>
-</div>
-</section>
-<section id="the-gap-widens-at-higher-internet-speeds" class="level3">
-<h3 class="anchored" data-anchor-id="the-gap-widens-at-higher-internet-speeds">The gap widens at higher internet speeds</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Measure</th>
-<th style="text-align: right;">Urban (%)</th>
-<th style="text-align: right;">Rural (%)</th>
-<th style="text-align: right;">Farm (%)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Above USO</td>
-<td style="text-align: right;">99.95</td>
-<td style="text-align: right;">98.67</td>
-<td style="text-align: right;">96.87</td>
-</tr>
-<tr class="even">
-<td>Access to ≥30 Mb/s</td>
-<td style="text-align: right;">97.94</td>
-<td style="text-align: right;">86.46</td>
-<td style="text-align: right;">68.51</td>
-</tr>
-<tr class="odd">
-<td>Gigabit Availability</td>
-<td style="text-align: right;">87.67</td>
-<td style="text-align: right;">58.14</td>
-<td style="text-align: right;">47.53</td>
-</tr>
-</tbody>
-</table>
-<p>The largest differences emerge when considering access to high-speed and gigabit-capable broadband.</p>
-</section>
-<section id="connectivity-strongly-reflects-location" class="level3">
-<h3 class="anchored" data-anchor-id="connectivity-strongly-reflects-location">Connectivity strongly reflects location</h3>
-</section>
-</section>
-<section id="interactive-map" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-map">Interactive map</h2>
-</section>
-<section id="interactive-map-1" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-map-1">Interactive map</h2>
-<iframe src="access-to-wifi-map.html" width="100%" height="750" frameborder="0">
-</iframe>
-<p>Access to broadband appears closely linked to infrastructure. Urban areas benefit from greater coverage, while connectivity decreases in more remote and dispersed settlements.</p>
-<p>Farms often occupy the most geographically isolated locations and experience lower access to faster services.</p>
-<section id="rural-classifications-can-hide-inequality" class="level3">
-<h3 class="anchored" data-anchor-id="rural-classifications-can-hide-inequality">Rural classifications can hide inequality</h3>
-<p>The analysis suggests that broad urban-rural classifications may mask important differences within rural areas.</p>
-<p>Farming communities often experience poorer connectivity than neighbouring villages despite both being classified as rural.</p>
-</section>
-<section id="broadband-access-is-geographically-clustered" class="level3">
-<h3 class="anchored" data-anchor-id="broadband-access-is-geographically-clustered">Broadband access is geographically clustered</h3>
-<p>Spatial analysis identified significant clustering of broadband performance.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Indicator</th>
-<th style="text-align: right;">Moran’s I</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Above USO</td>
-<td style="text-align: right;">0.373</td>
-</tr>
-<tr class="even">
-<td>≥30 Mb/s</td>
-<td style="text-align: right;">0.567</td>
-</tr>
-<tr class="odd">
-<td>Gigabit Availability</td>
-<td style="text-align: right;">0.637</td>
-</tr>
-</tbody>
-</table>
-<p>Areas with good connectivity tend to be near other well-connected areas, while poorly connected areas also cluster geographically.</p>
-</section>
-</section>
-<section id="interpretation" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
-<p>Official statistics already show a rural-urban divide in connectivity.</p>
-<p>Our findings suggest that some communities within rural areas, particularly farming households, may experience even greater disadvantage than broader rural averages suggest.</p>
-<p>As services continue to move online, poor connectivity may reduce access to:</p>
-<ul>
-<li>Healthcare</li>
-<li>Education</li>
-<li>Employment</li>
-<li>Government services</li>
-<li>Social participation</li>
-</ul>
-</section>
-<section id="limitations" class="level2">
-<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>There is currently no open national register of farm properties in the UK.</p>
-</div>
-</div>
-<p>This analysis therefore identifies likely farming locations using a combination of:</p>
-<ul>
-<li>OpenStreetMap</li>
-<li>Companies House records</li>
-</ul>
-<p>Other limitations include:</p>
-<ul>
-<li>Use of postcode centroids rather than boundaries</li>
-<li>Postcode-level broadband data</li>
-<li>No comparable mobile coverage data at postcode scale</li>
-</ul>
-</section>
-<section id="future-research" class="level2">
-<h2 class="anchored" data-anchor-id="future-research">Future Research</h2>
-<p>Future work could explore:</p>
-<ul>
-<li>Deprivation and digital exclusion</li>
-<li>Mobile connectivity</li>
-<li>Household-level analysis through UPRN linkage</li>
-<li>Distance to telecommunications infrastructure</li>
-<li>Standardised UK-wide urban/rural classifications</li>
-</ul>
-</section>
-<section id="reproducibility" class="level2">
-<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
-<section id="methods" class="level3">
-<h3 class="anchored" data-anchor-id="methods">Methods</h3>
-<ul>
-<li>Active Postcodes</li>
-<li>Rural / Urban Classification</li>
-<li>Spatial Linking</li>
-<li>Statistical Pipelines</li>
-</ul>
-</section>
-<section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">Resources</h3>
-<ul>
-<li>GitHub Repository</li>
-<li>Analysis Notebooks</li>
-<li>OFCOM Connected Nations Data</li>
-</ul>
 
 
-</section>
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
