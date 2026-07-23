@@ -14,25 +14,102 @@
     "text": "This section is under development."
   },
   {
-    "objectID": "themes/access-to-services/access-to-wifi-map.html",
-    "href": "themes/access-to-services/access-to-wifi-map.html",
+    "objectID": "themes/access-to-services/access-to-broadband-map.html",
+    "href": "themes/access-to-services/access-to-broadband-map.html",
     "title": "ADR GIS Atlas",
     "section": "",
-    "text": "Legend\n\n\n0-25%\n\n\n25-50%\n\n\n50-75%\n\n\n75-90%\n\n\n90-100%"
+    "text": "Gigabit Access (%Premises) Legend\n\n\n0-25%\n\n\n25-50%\n\n\n50-75%\n\n\n75-90%\n\n\n90-100%"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html",
+    "href": "themes/access-to-services/access-to-broadband.html",
+    "title": "Digital Connectivity",
+    "section": "",
+    "text": "NoteKey Finding\n\n\n\nFarming postcodes consistently recorded lower broadband availability than urban areas and generally performed worse than surrounding rural settlements, particularly for high-speed and gigabit services."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#background-and-aim",
+    "href": "themes/access-to-services/access-to-broadband.html#background-and-aim",
+    "title": "Digital Connectivity",
+    "section": "Background and Aim",
+    "text": "Background and Aim\nFarming communities are often geographically isolated and may face additional barriers to accessing services that are increasingly delivered online. This analysis uses open geospatial and administrative data to investigate whether likely farming locations experience poorer broadband connectivity than surrounding rural communities and urban areas across the UK.\n\n“Access to services is getting harder — everything is further away, and more of it is online. Without decent internet or phone signal, farmers are at a real disadvantage. Farmhouses often sit further out than other rural homes, which means poorer broadband and longer journeys for even simple services. Poor connectivity isn’t just inconvenient; it creates real barriers to healthcare, work and basic communication for farming families.”"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#why-this-matters",
+    "href": "themes/access-to-services/access-to-broadband.html#why-this-matters",
+    "title": "Digital Connectivity",
+    "section": "Why this Matters",
+    "text": "Why this Matters\nAccess to many public and private services now depends on digital connectivity. Communities with poor broadband coverage may face barriers to:\n\nHealthcare\nEducation\nEmployment\nGovernment services\nBusiness activity\nSocial participation\n\nAs more services move online, differences in connectivity may contribute to wider inequalities in access to opportunities and support."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#methods",
+    "href": "themes/access-to-services/access-to-broadband.html#methods",
+    "title": "Digital Connectivity",
+    "section": "Methods",
+    "text": "Methods\nThis analysis combines several open datasets:\n\nOFCOM Connected Nations 2025 broadband data\nONS Postcode Directory active postcodes\nUK urban-rural classifications\nOpenStreetMap farmyard features\nCompanies House agricultural business records\n\nBroadband indicators were linked at postcode level and compared across urban, rural and likely farming locations. Spatial analysis was used to assess whether patterns of connectivity cluster geographically.\n\nUrban and Rural Classifications\nThe UK does not currently have a single harmonised urban-rural classification covering all four nations. England, Wales, Scotland and Northern Ireland each publish slightly different classification systems based on their own definitions and census geographies.\nFor this analysis, official classifications from each nation were combined into a common UK-wide urban/rural framework. This enabled comparisons across the whole UK while acknowledging that alternative classification approaches are available and may produce slightly different results.\n(see Methods - Urban Rural Classification Harmonisation)\n\n\nIdentifying Farming Locations\nThere is currently no open national register of farm properties in the UK.\nLikely farm locations were identified by combining OpenStreetMap farmyard features with Companies House records for agricultural businesses. While this approach is not perfect and may miss some farms, it provides a reproducible method for identifying farming postcodes using open data.\n(See Methods - Identifying Locations)"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#key-findings",
+    "href": "themes/access-to-services/access-to-broadband.html#key-findings",
+    "title": "Digital Connectivity",
+    "section": "Key Findings",
+    "text": "Key Findings\n\nFarming Locations Remain Among the Least Connected\nBroadband availability was consistently lower for farming postcodes than for either urban or rural locations.\nThe differences were modest when considering minimum service levels but became much larger for higher-speed broadband services.\n\n\nThe Gap Widens at Higher Broadband Speeds\n\n\n\nMeasure\nUrban (%)\nRural (%)\nFarm (%)\n\n\n\n\nAbove USO\n100.0\n98.7\n96.9\n\n\nAccess to ≥30 Mb/s\n97.9\n86.5\n68.5\n\n\nGigabit Availability\n87.7\n58.1\n47.5\n\n\n\nUSO (Universal Service Obligation) refers to the UK’s minimum broadband service standard of 10 Mb/s download speed.\nThe largest differences emerge when considering access to high-speed and gigabit-capable broadband services. While basic connectivity is widespread, access to faster infrastructure becomes progressively less common in rural and farming locations."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#gigabit-broadband-availability-uk",
+    "href": "themes/access-to-services/access-to-broadband.html#gigabit-broadband-availability-uk",
+    "title": "Digital Connectivity",
+    "section": "Gigabit Broadband Availability, UK",
+    "text": "Gigabit Broadband Availability, UK\n\n\n*Data sources: OFCOM, ONS, OpenStreetMap\n\nRural Classifications Can Hide Important Differences\nOfficial statistics already show a rural-urban divide in connectivity.\nHowever, this analysis suggests that broad rural classifications may conceal important variation within rural areas. Farming communities often experience poorer broadband availability than neighbouring villages despite both being classified as rural.\n\n\nBroadband Access is Geographically Clustered\nAreas with good broadband connectivity tend to be located near other well-connected areas, while poorly connected areas also occur together geographically.\n\n\n\nIndicator\nMoran’s I\n\n\n\n\nAbove USO\n0.373\n\n\n≥30 Mb/s\n0.567\n\n\nGigabit Availability\n0.637\n\n\n\nThe stronger clustering observed for higher-speed broadband suggests that inequalities in access are not randomly distributed but instead reflect broader infrastructure patterns."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#interpretation",
+    "href": "themes/access-to-services/access-to-broadband.html#interpretation",
+    "title": "Digital Connectivity",
+    "section": "Interpretation",
+    "text": "Interpretation\nThe findings broadly support existing evidence that rural areas experience poorer digital connectivity than urban areas.\nThey also suggest that farming households may experience additional disadvantage beyond that reflected in national rural averages. As services continue to move online, poorer broadband access may create barriers to participation in economic and social life."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#limitations",
+    "href": "themes/access-to-services/access-to-broadband.html#limitations",
+    "title": "Digital Connectivity",
+    "section": "Limitations",
+    "text": "Limitations\n\n\n\n\n\n\nImportant\n\n\n\nThere is currently no open national register of farm properties in the UK.\n\n\nSeveral limitations should be considered:\n\nFarm locations were estimated using open data sources\nSome active farms may not have been identified\nPostcode centroids were used rather than postcode boundaries\nBroadband data are reported at postcode level\nComparable mobile coverage data were not available at a similar spatial scale\n\nResults should therefore be interpreted as indicative rather than definitive."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#future-research",
+    "href": "themes/access-to-services/access-to-broadband.html#future-research",
+    "title": "Digital Connectivity",
+    "section": "Future Research",
+    "text": "Future Research\nPotential extensions include:\n\nDeprivation and digital exclusion\nMobile coverage and signal quality\nHousehold-level analysis through UPRN linkage\nDistance to telecommunications infrastructure\nComparison of alternative urban-rural classifications\nDevelopment of a harmonised UK-wide rural classification framework\n\nA better understanding of within-rural variation may help identify communities most at risk of digital exclusion."
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#reproducibility",
+    "href": "themes/access-to-services/access-to-broadband.html#reproducibility",
+    "title": "Digital Connectivity",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\nData Sources\n\nOFCOM Connected Nations 2025\nONS Postcode Directory\nOpenStreetMap\nCompanies House\nNational Urban-Rural Classifications\n\n\n\nResources\n\nGitHub Repository\nAnalysis Notebooks\nMethods Documentation\nAtlas Data Licence Page"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-broadband.html#references",
+    "href": "themes/access-to-services/access-to-broadband.html#references",
+    "title": "Digital Connectivity",
+    "section": "References",
+    "text": "References\nGood Things Foundation (2024). The Internet is an Essential Utility and Human Right. https://www.goodthingsfoundation.org/policy-and-research/research-and-evidence/research-2024/internet-is-essential-utility-and-human-right\nOfcom (2025). Connected Nations 2025. https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/connected-nations-interactive-report-2025\nOffice for National Statistics (ONS). ONS Postcode Directory (ONSPD).\nCompanies House. Basic Company Data Product.\nOpenStreetMap Contributors. OpenStreetMap Data. https://www.openstreetmap.org\nWorld Bank (2024). Individuals using the Internet (% of population). https://data.worldbank.org/indicator/IT.NET.USER.ZS"
   },
   {
     "objectID": "themes/access-to-services/index.html",
     "href": "themes/access-to-services/index.html",
     "title": "Access to Services",
     "section": "",
-    "text": "This theme explores inequalities in access to essential services and infrastructure.\n\n\n\nAccess to WiFi\n\n\n\n\n\nHealthcare Access"
+    "text": "This theme explores inequalities in access to essential services and infrastructure.\n\n\n\nAccess to Broadband\n\n\n\n\n\nHealthcare Access"
   },
   {
     "objectID": "themes/access-to-services/index.html#current-stories",
     "href": "themes/access-to-services/index.html#current-stories",
     "title": "Access to Services",
     "section": "",
-    "text": "Access to WiFi"
+    "text": "Access to Broadband"
   },
   {
     "objectID": "themes/access-to-services/index.html#coming-soon",
@@ -53,14 +130,14 @@
     "href": "index.html#featured-story",
     "title": "ADR GIS Atlas",
     "section": "Featured Story",
-    "text": "Featured Story\n\nAccess to WiFi\nAccess to reliable internet is increasingly essential for education, employment, healthcare and social participation.\nThis project investigates patterns of internet and WiFi access across communities and population groups.\nExplore Access to Wifi"
+    "text": "Featured Story\n\nAccess to Broadband\nAccess to reliable internet is increasingly essential for education, employment, healthcare and social participation.\nThis project investigates patterns of internet and WiFi access across communities and population groups.\nExplore Access to Broadband"
   },
   {
     "objectID": "index.html#themes",
     "href": "index.html#themes",
     "title": "ADR GIS Atlas",
     "section": "Themes",
-    "text": "Themes\n\nAccess to Services\nResearch exploring inequalities in access to infrastructure and essential services.\nExplore Access to Services\nCurrent stories include:\n\nAccess to WiFi\n\n\n\n\nClimate & Environment\nResearch examining the relationship between people, places and environmental conditions.\nExplore Climate & Environment\nAreas of interest include:\n\nEnvironmental exposure\nClimate vulnerability\nPlace-based inequalities\n\n\n\n\nPopulation Health\nResearch exploring health outcomes and inequalities through linked administrative data.\nExplore Population Health\nAreas of interest include:\n\nHealth inequalities\nPopulation wellbeing\nGeographic variation in health outcomes"
+    "text": "Themes\n\nAccess to Services\nResearch exploring inequalities in access to infrastructure and essential services.\nExplore Access to Services\nCurrent stories include:\n\nAccess to Broadband\n\n\n\n\nClimate & Environment\nResearch examining the relationship between people, places and environmental conditions.\nExplore Climate & Environment\nAreas of interest include:\n\nEnvironmental exposure\nClimate vulnerability\nPlace-based inequalities\n\n\n\n\nPopulation Health\nResearch exploring health outcomes and inequalities through linked administrative data.\nExplore Population Health\nAreas of interest include:\n\nHealth inequalities\nPopulation wellbeing\nGeographic variation in health outcomes"
   },
   {
     "objectID": "index.html#methods",
@@ -137,7 +214,7 @@
     "href": "themes/access-to-services/access-to-wifi.html",
     "title": "Digital Connectivity",
     "section": "",
-    "text": "Farm internet speeds remain among the lowest in the country despite increasing dependence on digital services.\n\n\n\nAccess to services is increasingly digital. From healthcare and education to banking and government services, many everyday activities now depend on a reliable internet connection.\nCommunities with poor connectivity may face barriers to participation in modern society.\n\n\n\n\n\nFarming postcodes consistently recorded poorer internet connectivity than urban areas and generally performed worse than surrounding rural settlements, particularly when looking at higher-speed broadband services.\n\n\n\n\n\n\nNote\n\n\n\nFarm internet speeds remain among the lowest in the country despite increasing dependence on digital services.\n\n\n\n\n\n\n\n\nMeasure\nUrban (%)\nRural (%)\nFarm (%)\n\n\n\n\nAbove USO\n99.95\n98.67\n96.87\n\n\nAccess to ≥30 Mb/s\n97.94\n86.46\n68.51\n\n\nGigabit Availability\n87.67\n58.14\n47.53\n\n\n\nThe largest differences emerge when considering access to high-speed and gigabit-capable broadband.\n\n\n\n\n\n\n\n\n\nAccess to broadband appears closely linked to infrastructure. Urban areas benefit from greater coverage, while connectivity decreases in more remote and dispersed settlements.\nFarms often occupy the most geographically isolated locations and experience lower access to faster services.\n\n\nThe analysis suggests that broad urban-rural classifications may mask important differences within rural areas.\nFarming communities often experience poorer connectivity than neighbouring villages despite both being classified as rural.\n\n\n\nSpatial analysis identified significant clustering of broadband performance.\n\n\n\nIndicator\nMoran’s I\n\n\n\n\nAbove USO\n0.373\n\n\n≥30 Mb/s\n0.567\n\n\nGigabit Availability\n0.637\n\n\n\nAreas with good connectivity tend to be near other well-connected areas, while poorly connected areas also cluster geographically.\n\n\n\n\nOfficial statistics already show a rural-urban divide in connectivity.\nOur findings suggest that some communities within rural areas, particularly farming households, may experience even greater disadvantage than broader rural averages suggest.\nAs services continue to move online, poor connectivity may reduce access to:\n\nHealthcare\nEducation\nEmployment\nGovernment services\nSocial participation\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThere is currently no open national register of farm properties in the UK.\n\n\nThis analysis therefore identifies likely farming locations using a combination of:\n\nOpenStreetMap\nCompanies House records\n\nOther limitations include:\n\nUse of postcode centroids rather than boundaries\nPostcode-level broadband data\nNo comparable mobile coverage data at postcode scale\n\n\n\n\nFuture work could explore:\n\nDeprivation and digital exclusion\nMobile connectivity\nHousehold-level analysis through UPRN linkage\nDistance to telecommunications infrastructure\nStandardised UK-wide urban/rural classifications\n\n\n\n\n\n\n\nActive Postcodes\nRural / Urban Classification\nSpatial Linking\nStatistical Pipelines\n\n\n\n\n\nGitHub Repository\nAnalysis Notebooks\nOFCOM Connected Nations Data"
+    "text": "Farm internet speeds remain among the lowest in the country despite increasing dependence on digital services.\n\n\n\nAccess to services is increasingly digital. From healthcare and education to banking and government services, many everyday activities now depend on a reliable internet connection.\nCommunities with poor connectivity may face barriers to participation in modern society.\n\n\n\n\n\nFarming postcodes consistently recorded poorer internet connectivity than urban areas and generally performed worse than surrounding rural settlements, particularly when looking at higher-speed broadband services.\n\n\n\n\n\n\nNote\n\n\n\nFarm internet speeds remain among the lowest in the country despite increasing dependence on digital services.\n\n\n\n\n\n\n\n\nMeasure\nUrban (%)\nRural (%)\nFarm (%)\n\n\n\n\nAbove USO\n99.95\n98.67\n96.87\n\n\nAccess to ≥30 Mb/s\n97.94\n86.46\n68.51\n\n\nGigabit Availability\n87.67\n58.14\n47.53\n\n\n\nThe largest differences emerge when considering access to high-speed and gigabit-capable broadband.\n\n\n\n\n\n\n\n\n\nData sources: OFCOM, ONS, Royal Mail, Swansea University.\nAccess to broadband appears closely linked to infrastructure. Urban areas benefit from greater coverage, while connectivity decreases in more remote and dispersed settlements.\nFarms often occupy the most geographically isolated locations and experience lower access to faster services.\n\n\nThe analysis suggests that broad urban-rural classifications may mask important differences within rural areas.\nFarming communities often experience poorer connectivity than neighbouring villages despite both being classified as rural.\n\n\n\nSpatial analysis identified significant clustering of broadband performance.\n\n\n\nIndicator\nMoran’s I\n\n\n\n\nAbove USO\n0.373\n\n\n≥30 Mb/s\n0.567\n\n\nGigabit Availability\n0.637\n\n\n\nAreas with good connectivity tend to be near other well-connected areas, while poorly connected areas also cluster geographically.\n\n\n\n\nOfficial statistics already show a rural-urban divide in connectivity.\nOur findings suggest that some communities within rural areas, particularly farming households, may experience even greater disadvantage than broader rural averages suggest.\nAs services continue to move online, poor connectivity may reduce access to:\n\nHealthcare\nEducation\nEmployment\nGovernment services\nSocial participation\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThere is currently no open national register of farm properties in the UK.\n\n\nThis analysis therefore identifies likely farming locations using a combination of:\n\nOpenStreetMap\nCompanies House records\n\nOther limitations include:\n\nUse of postcode centroids rather than boundaries\nPostcode-level broadband data\nNo comparable mobile coverage data at postcode scale\n\n\n\n\nFuture work could explore:\n\nDeprivation and digital exclusion\nMobile connectivity\nHousehold-level analysis through UPRN linkage\nDistance to telecommunications infrastructure\nStandardised UK-wide urban/rural classifications\n\n\n\n\n\n\n\nActive Postcodes\nRural / Urban Classification\nSpatial Linking\nStatistical Pipelines\n\n\n\n\n\nGitHub Repository\nAnalysis Notebooks\nOFCOM Connected Nations Data"
   },
   {
     "objectID": "themes/access-to-services/access-to-wifi.html#why-this-matters",
@@ -154,11 +231,11 @@
     "text": "Farming postcodes consistently recorded poorer internet connectivity than urban areas and generally performed worse than surrounding rural settlements, particularly when looking at higher-speed broadband services.\n\n\n\n\n\n\nNote\n\n\n\nFarm internet speeds remain among the lowest in the country despite increasing dependence on digital services.\n\n\n\n\n\n\n\n\nMeasure\nUrban (%)\nRural (%)\nFarm (%)\n\n\n\n\nAbove USO\n99.95\n98.67\n96.87\n\n\nAccess to ≥30 Mb/s\n97.94\n86.46\n68.51\n\n\nGigabit Availability\n87.67\n58.14\n47.53\n\n\n\nThe largest differences emerge when considering access to high-speed and gigabit-capable broadband."
   },
   {
-    "objectID": "themes/access-to-services/access-to-wifi.html#interactive-map",
-    "href": "themes/access-to-services/access-to-wifi.html#interactive-map",
+    "objectID": "themes/access-to-services/access-to-wifi.html#gigabit-internet-speeds-uk",
+    "href": "themes/access-to-services/access-to-wifi.html#gigabit-internet-speeds-uk",
     "title": "Digital Connectivity",
     "section": "",
-    "text": "Access to broadband appears closely linked to infrastructure. Urban areas benefit from greater coverage, while connectivity decreases in more remote and dispersed settlements.\nFarms often occupy the most geographically isolated locations and experience lower access to faster services.\n\n\nThe analysis suggests that broad urban-rural classifications may mask important differences within rural areas.\nFarming communities often experience poorer connectivity than neighbouring villages despite both being classified as rural.\n\n\n\nSpatial analysis identified significant clustering of broadband performance.\n\n\n\nIndicator\nMoran’s I\n\n\n\n\nAbove USO\n0.373\n\n\n≥30 Mb/s\n0.567\n\n\nGigabit Availability\n0.637\n\n\n\nAreas with good connectivity tend to be near other well-connected areas, while poorly connected areas also cluster geographically."
+    "text": "Data sources: OFCOM, ONS, Royal Mail, Swansea University.\nAccess to broadband appears closely linked to infrastructure. Urban areas benefit from greater coverage, while connectivity decreases in more remote and dispersed settlements.\nFarms often occupy the most geographically isolated locations and experience lower access to faster services.\n\n\nThe analysis suggests that broad urban-rural classifications may mask important differences within rural areas.\nFarming communities often experience poorer connectivity than neighbouring villages despite both being classified as rural.\n\n\n\nSpatial analysis identified significant clustering of broadband performance.\n\n\n\nIndicator\nMoran’s I\n\n\n\n\nAbove USO\n0.373\n\n\n≥30 Mb/s\n0.567\n\n\nGigabit Availability\n0.637\n\n\n\nAreas with good connectivity tend to be near other well-connected areas, while poorly connected areas also cluster geographically."
   },
   {
     "objectID": "themes/access-to-services/access-to-wifi.html#interpretation",
@@ -187,6 +264,13 @@
     "title": "Digital Connectivity",
     "section": "",
     "text": "Active Postcodes\nRural / Urban Classification\nSpatial Linking\nStatistical Pipelines\n\n\n\n\n\nGitHub Repository\nAnalysis Notebooks\nOFCOM Connected Nations Data"
+  },
+  {
+    "objectID": "themes/access-to-services/access-to-wifi-map.html",
+    "href": "themes/access-to-services/access-to-wifi-map.html",
+    "title": "ADR GIS Atlas",
+    "section": "",
+    "text": "Gigabit Access (%Premises) Legend\n\n\n0-25%\n\n\n25-50%\n\n\n50-75%\n\n\n75-90%\n\n\n90-100%"
   },
   {
     "objectID": "themes/population-health/index.html",

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ADR GIS Atlas</title>
+<title>access-to-broadband-map – ADR GIS Atlas</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6033a600180109c3731f6a886c29932c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6033a600180109c3731f6a886c29932c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,190 +72,195 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/logos/adr-wales-logo-dark-sky-bg.png" alt="" class="navbar-logo light-content">
-    <img src="./assets/logos/adr-wales-logo-dark-sky-bg.png" alt="" class="navbar-logo dark-content">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">ADR GIS Atlas</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-themes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Themes</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-themes">    
-        <li>
-    <a class="dropdown-item" href="./themes/access-to-services/index.html">
- <span class="dropdown-text">Access to Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./themes/climate-environment/index.html">
- <span class="dropdown-text">Climate &amp; Environment</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./themes/population-health/index.html">
- <span class="dropdown-text">Population Health</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./methods/index.html"> 
-<span class="menu-text">Methods</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications/index.html"> 
-<span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">ADR GIS Atlas</h1>
+
+
+
+<p><link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css"></p>
+<div style="position:relative;">
+<div id="map" style="height:85vh;">
+
 </div>
+<div id="legend">
+<details>
+<summary>
+Gigabit Access (%Premises) Legend
+</summary>
+<div>
+<span style="background:#D9EDF2"></span>0-25%
+</div>
+<div>
+<span style="background:#87E1D1"></span>25-50%
+</div>
+<div>
+<span style="background:#23C6A8"></span>50-75%
+</div>
+<div>
+<span style="background:#2E6F95"></span>75-90%
+</div>
+<div>
+<span style="background:#24384D"></span>90-100%
+</div>
+</details>
+</div>
+</div>
+<style>
+#legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
 
+#legend details {
+  font-size: 14px;
+}
 
+#legend div {
+  margin-top: 4px;
+}
 
-<div class="quarto-title-meta">
+#legend span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+</style>
+<script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/pmtiles@4.3.0/dist/pmtiles.js"></script>
+<script>
 
+  const protocol = new pmtiles.Protocol();
+  maplibregl.addProtocol("pmtiles", protocol.tile);
+
+</script>
+<script>
+
+const map = new maplibregl.Map({
+  container: "map",
+
+  style: {
+    version: 8,
+
+    sources: {
+
+      carto: {
+        type: "raster",
+        tiles: [
+          "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+          "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+          "https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+        ],
+        tileSize: 256
+      },
+
+      connectivity: {
+        type: "vector",
+        url: "pmtiles://https://r-pedrick-case.github.io/adr-gis-site/data/maps/connectivity.pmtiles"
+      }
+
+    },
+
+    layers: [
+
+      {
+        id: "carto",
+        type: "raster",
+        source: "carto"
+      },
+
+      {
+        id: "connectivity",
+        type: "fill",
+        source: "connectivity",
+        "source-layer": "uk_connectivity_hex_2025",
+
+        paint: {
+          "fill-color": [
+            "interpolate",
+            ["linear"],
+            ["get", "Gigabit availability (% premises)"],
+
+            0, "#D9EDF2",
+            25, "#87E1D1",
+            50, "#23C6A8",
+            75, "#2E6F95",
+            100, "#24384D"
+          ],
+
+          "fill-opacity": 0.5
+        }
+      },
+
+      {
+        id: "connectivity-outline",
+        type: "line",
+        source: "connectivity",
+        "source-layer": "uk_connectivity_hex_2025",
+
+        paint: {
+          "line-color": "#ffffff",
+          "line-width": 0.5
+        }
+
+      }
+    ]
+
+  },
     
-  
-    
-  </div>
-  
+      center: [-3.94, 51.62],
+      zoom: 10
+
+  });
+
+const popup = new maplibregl.Popup({
+  closeButton: false,
+  closeOnClick: false
+});
+
+map.on("mousemove", "connectivity", (e) => {
+
+  const p = e.features[0].properties;
+
+  popup
+    .setLngLat(e.lngLat)
+    .setHTML(
+      `<strong>Gigabit availability:</strong> ${Number(p["Gigabit availability (% premises)"]).toFixed(1)}%`
+    )
+    .addTo(map);
+
+});
+
+map.on("mouseleave", "connectivity", () => {
+  popup.remove();
+});
+
+map.addControl(new maplibregl.NavigationControl(), "top-left");
 
 
-</header>
+
+</script>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This Atlas is under active development. Findings and methods may be updated as feedback is incorporated.</p>
-</div>
-</div>
-<section id="adr-gis-atlas" class="level1">
-<h1>ADR GIS Atlas</h1>
-<p>Using linked administrative data to understand people, place, services, environment and health across Wales.</p>
-<p>The ADR GIS Atlas brings together research, methods, interactive analyses and publications developed through spatial analysis of linked administrative data.</p>
-<section id="featured-story" class="level2">
-<h2 class="anchored" data-anchor-id="featured-story">Featured Story</h2>
-<section id="access-to-broadband" class="level3">
-<h3 class="anchored" data-anchor-id="access-to-broadband">Access to Broadband</h3>
-<p>Access to reliable internet is increasingly essential for education, employment, healthcare and social participation.</p>
-<p>This project investigates patterns of internet and WiFi access across communities and population groups.</p>
-<p><a href="./themes/access-to-services/access-to-broadband.html">Explore Access to Broadband</a></p>
-<hr>
-</section>
-</section>
-<section id="themes" class="level2">
-<h2 class="anchored" data-anchor-id="themes">Themes</h2>
-<section id="access-to-services" class="level3">
-<h3 class="anchored" data-anchor-id="access-to-services">Access to Services</h3>
-<p>Research exploring inequalities in access to infrastructure and essential services.</p>
-<p><a href="./themes/access-to-services/index.html">Explore Access to Services</a></p>
-<p>Current stories include:</p>
-<ul>
-<li>Access to Broadband</li>
-</ul>
-<hr>
-</section>
-<section id="climate-environment" class="level3">
-<h3 class="anchored" data-anchor-id="climate-environment">Climate &amp; Environment</h3>
-<p>Research examining the relationship between people, places and environmental conditions.</p>
-<p><a href="./themes/population-health/index.html">Explore Climate &amp; Environment</a></p>
-<p>Areas of interest include:</p>
-<ul>
-<li>Environmental exposure</li>
-<li>Climate vulnerability</li>
-<li>Place-based inequalities</li>
-</ul>
-<hr>
-</section>
-<section id="population-health" class="level3">
-<h3 class="anchored" data-anchor-id="population-health">Population Health</h3>
-<p>Research exploring health outcomes and inequalities through linked administrative data.</p>
-<p><a href="./themes/population-health/index.html">Explore Population Health</a></p>
-<p>Areas of interest include:</p>
-<ul>
-<li>Health inequalities</li>
-<li>Population wellbeing</li>
-<li>Geographic variation in health outcomes</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="methods" class="level2">
-<h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<p>All projects are supported by transparent and reproducible analytical workflows.</p>
-<p>Methods documentation includes:</p>
-<ul>
-<li>Data sources</li>
-<li>Geographic processing</li>
-<li>Statistical methods</li>
-<li>Reproducibility guidance</li>
-</ul>
-<p><a href="./methods/index.html">Explore Methods</a></p>
-<hr>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<p>Publications, reports, preprints and presentations associated with Atlas projects.</p>
-<p><a href="./publications/index.html">Explore Publications</a></p>
-<hr>
-</section>
-<section id="collaboration" class="level2">
-<h2 class="anchored" data-anchor-id="collaboration">Collaboration</h2>
-<p>Feedback, discussion and collaboration are welcomed.</p>
-<p>The Atlas is intended as a living resource that brings together research outputs, exploratory analyses, methods and data stories in a single place.</p>
-
-
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
