@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>access-to-wifi-map – ADR GIS Atlas</title>
+<title>Test Map – ADR GIS Atlas</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -139,61 +139,67 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Test Map</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<div class="{=html}">
-<p><link href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css" rel="stylesheet"></p>
-<style>
-#map {
-  height: 700px;
-  width: 100%;
-  border-radius: 8px;
-}
-</style>
-<div id="map">
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css"></p>
+<div id="map" style="height:700px;border:1px;width:100%;">
 
 </div>
-://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js”&gt;
-<script src="https://"></script>
+<script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/pmtiles@4.3.0/dist/pmtiles.js"></script>
 <script>
 
-const protocol = new pmtiles.Protocol();
-maplibregl.addProtocol("pmtiles", protocol.tile);
+  const protocol = new pmtiles.Protocol();
+  maplibregl.addProtocol("pmtiles", protocol.tile);
 
-const map = new maplibregl.Map({
-  container: "map",
+  const map = new maplibregl.Map({
+    container: "map",
+    style: {
+      version: 8,
+      
+      sources: {
+        osm: {
+          type: "raster",
+          tiles: [
+            "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
 
-  style: {
-    version: 8,
+          ],
+          tileSize: 256
+        },
 
-    sources: {
-
-      osm: {
-        type: "raster",
-        tiles: [
-          "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-        ],
-        tileSize: 256,
-        attribution: "© OpenStreetMap contributors"
-      },
-
-      connectivity: {
-        type: "vector",
-        url: "pmtiles://../../data/maps/connectivity.pmtiles"
-      }
-
+        connectivity: {
+          type:"vector",
+          url:"pmtiles://https://r-pedrick-case.github.io/adr-gis-site/data/maps/connectivity.pmtiles"
+        }
     },
 
-    layers: [
-
+      layers: [
       {
         id: "osm",
         type: "raster",
@@ -201,43 +207,36 @@ const map = new maplibregl.Map({
       },
 
       {
-        id: "connectivity",
-        type: "fill",
-        source: "connectivity",
-        "source-layer": "uk_connectivity_hex_2025",
+        id: 'connectivity',
+        type: 'fill',
+        source: 'connectivity',
+        "source-layer": 'uk_connectivity_hex_2025',
 
         paint: {
-
           "fill-color": [
             "interpolate",
             ["linear"],
             ["get", "Gigabit availability (% premises)"],
 
-            0,   "#D9EDF2",
-            25,  "#87E1D1",
-            50,  "#23C6A8",
-            75,  "#2E6F95",
+            0, "#D9EDF2",
+            25, "#87E1D1",
+            50, "#23C6A8",
+            75, "#2E6F95",
             100, "#24384D"
-          ],
 
+          ],
           "fill-opacity": 0.75
         }
       }
-
     ]
   },
 
   center: [-2.5, 54.5],
   zoom: 5
+
 });
 
-map.addControl(
-  new maplibregl.NavigationControl(),
-  "top-right"
-);
-
 </script>
-</div>
 
 
 

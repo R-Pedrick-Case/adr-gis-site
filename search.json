@@ -14,13 +14,6 @@
     "text": "This section is under development."
   },
   {
-    "objectID": "themes/access-to-services/access-to-wifi-map.html",
-    "href": "themes/access-to-services/access-to-wifi-map.html",
-    "title": "ADR GIS Atlas",
-    "section": "",
-    "text": "://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js”&gt;"
-  },
-  {
     "objectID": "themes/access-to-services/index.html",
     "href": "themes/access-to-services/index.html",
     "title": "Access to Services",
